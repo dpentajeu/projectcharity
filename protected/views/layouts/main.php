@@ -1,59 +1,143 @@
-<?php /* @var $this Controller */ ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<?php
+    $baseUrl = Yii::app()->request->baseUrl;
+?>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="language" content="en" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
+    <title>We remember MH17</title>
 
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+    <!-- Bootstrap Core CSS -->
+    <link href="<?= $baseUrl ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+    <!-- Fonts -->
+    <link href="<?= $baseUrl ?>/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Custom Theme CSS -->
+    <link href="<?= $baseUrl ?>/css/grayscale.css" rel="stylesheet">
+
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
-<div class="container" id="page">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="http://www.malaysiaairlines.com/my/en/site/mh17.html" target="_blank">
+                    <i class="fa fa-play-circle"></i>  <span class="light">MH17</span> Media Statement
+                </a>
+            </div>
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Remember</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#download">Wall</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">News</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		)); ?>
-	</div><!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
+    <section class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">MH17</h1>
+                        <p class="intro-text">Our thoughts and prayers are with the passengers, crew members, families and friends on board MH17.</p>
+                        <div class="page-scroll">
+                            <a href="#about" class="btn btn-circle">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<?php echo $content; ?>
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>We remember MH17</h2>
+                <p>A Malaysia Airlines flight from Amsterdam to Kuala Lumpur, Malaysia, crashed Thursday 17 July 2014 in eastern Ukraine.</p>
+                <p>We face this tragedy together, regardless of differences in race or religion.</p>                
+            </div>
+        </div>
+    </section>
 
-	<div class="clear"></div>
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Wall of Tribute</h2>
+                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
+                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
+                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
+                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
+                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
+                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
+                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
+                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
+                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
-	</div><!-- footer -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Follow breaking news</h2>
+                <ul class="list-inline banner-social-buttons">
+                    <li><a href="#twitter" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li><a href="#instagram" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+                    </li>
+                    <li><a href="#facebook" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                </ul>
+                <p>© Credits to Pentajeu Software Team</p>
+            </div>
+        </div>
+    </section>
 
-</div><!-- page -->
+    <div id="map"></div>
+
+    <!-- Core JavaScript Files -->
+    
+    <script src="<?= $baseUrl ?>/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - You will need to use your own API key to use the map feature -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="<?= $baseUrl ?>/js/grayscale.js"></script>
 
 </body>
+
 </html>
