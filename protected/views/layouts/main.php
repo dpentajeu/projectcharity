@@ -26,6 +26,7 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <div id="fb-root"></div>    
 
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -49,10 +50,10 @@
                         <a href="#about">Remember</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#download">Wall</a>
+                        <a href="#tribute">Wall</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">News</a>
+                        <a href="#news">News</a>
                     </li>
                 </ul>
             </div>
@@ -79,52 +80,7 @@
         </div>
     </section>
 
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>We remember MH17</h2>
-                <p>A Malaysia Airlines flight from Amsterdam to Kuala Lumpur, Malaysia, crashed Thursday 17 July 2014 in eastern Ukraine.</p>
-                <p>We face this tragedy together, regardless of differences in race or religion.</p>                
-            </div>
-        </div>
-    </section>
-
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Wall of Tribute</h2>
-                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
-                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
-                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
-                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
-                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
-                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
-                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
-                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
-                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
-                    <p>"uishfuidfhuisdhfuisdhfiushuihfuihsdiudfs", John.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Follow breaking news</h2>
-                <ul class="list-inline banner-social-buttons">
-                    <li><a href="#twitter" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li><a href="#instagram" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
-                    </li>
-                    <li><a href="#facebook" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                </ul>
-                <p>© Credits to Pentajeu Software Team</p>
-            </div>
-        </div>
-    </section>
+    <?php echo $content; ?>
 
     <div id="map"></div>
 
@@ -139,6 +95,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="<?= $baseUrl ?>/js/grayscale.js"></script>
 
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=535122303227569&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
 </body>
 
 </html>
