@@ -31,9 +31,9 @@
                 <li>
                     <a href="javascript:void(0);" data-target="#instagram" class="mh17-tab btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="javascript:void(0);" data-target="#reuters" class="mh17-tab btn btn-default btn-lg"><i class="fa fa-rss fa-fw"></i> <span class="network-name">Reuters</span></a>
-                </li>
+                </li> -->
             </ul>
         </div>
     <div class="row">
@@ -46,9 +46,9 @@
                 <iframe src="http://www.intagme.com/in/?h=bWgxN3xzbHw1MDB8MnwzfHx5ZXN8NXx1bmRlZmluZWR8eWVz" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:515px; height: 515px" ></iframe>
             </div>
             <div class="mh17-tab-pane" id="reuters" style="display: none;">
-                <script src="http://nmp.newsgator.com/NGBuzz/buzz.ashx?buzzId=81503&amp;apiToken=AAA11919E8A84EB8986088D0B39F3E0B&amp;trkP=&amp;trkM=94EB6FAB-58C5-EE96-F3DB-C2444C40C1BA" type="text/javascript"></script>
-                <h6>© Website development credits to Pentajeu Sdn Bhd</h6>
+                <script src="http://nmp.newsgator.com/NGBuzz/buzz.ashx?buzzId=81503&apiToken=AAA11919E8A84EB8986088D0B39F3E0B&trkP=&trkM=94EB6FAB-58C5-EE96-F3DB-C2444C40C1BA" type="text/javascript"></script>
             </div>
+            <h6>© Website development credits to Pentajeu Sdn Bhd</h6>
         </div>
     </div>
 </section>
