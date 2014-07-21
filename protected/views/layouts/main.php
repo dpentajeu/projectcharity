@@ -20,6 +20,8 @@
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
+    <script src="http://builds.emberjs.com/release/ember.min.js"></script>
     <!-- Custom Theme CSS -->
     <link href="<?= $baseUrl ?>/css/grayscale.css" rel="stylesheet">
 
